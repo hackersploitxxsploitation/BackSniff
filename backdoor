@@ -1,7 +1,8 @@
 from scapy.all import *
 import socket
 pacote =sniff(filter='',store=0)
-v=pacote.encode ()
+l=pacote.show()
+v=l.encode ()
 while True:
     s=socket.socket ()
     IP=""
